@@ -6,11 +6,12 @@ const repeatString = function(string, times) {
         i++;
     }
 
-    if (stringOut === ""){
+    if (stringOut === "" && parseInt(stringOut) >= 0){
         return "";
     }
-    else if (stringOut <= 0){
-        return "ERROR";
+    else if (parseInt(stringOut) < 0){
+        throw new Error('ERROR');
+        //return Error();
     } else {
         return stringOut;
     }
