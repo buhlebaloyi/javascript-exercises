@@ -2,7 +2,7 @@ const repeatString = function(string, times) {
     if (times < 0){
         return "ERROR";
     }
-    
+
     let i = 0;
     let stringOut = "";
     while (i < times) {
@@ -10,7 +10,7 @@ const repeatString = function(string, times) {
         i++;
     }
 
-    if (stringOut === "" && parseInt(stringOut) >= 0){
+    if (stringOut === ""){
         return "";
     } else {
         return stringOut;
