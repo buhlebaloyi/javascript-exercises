@@ -1,4 +1,8 @@
 const repeatString = function(string, times) {
+    if (times < 0){
+        return "ERROR";
+    }
+    
     let i = 0;
     let stringOut = "";
     while (i < times) {
@@ -8,10 +12,6 @@ const repeatString = function(string, times) {
 
     if (stringOut === "" && parseInt(stringOut) >= 0){
         return "";
-    }
-    else if (parseInt(stringOut) < 0){
-        throw new Error('ERROR');
-        //return Error();
     } else {
         return stringOut;
     }
