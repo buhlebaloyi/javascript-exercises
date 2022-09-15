@@ -23,7 +23,7 @@ const removeFromArray = function(...theArgs) {
             //console.log(argsToRemove);
         }
         count1++;
-        count2 = 0;
+        count2 = 0; // resetting outer count while incrementing inner count
     }
 
     return initialArray;
