@@ -5,7 +5,6 @@ const removeFromArray = function(...theArgs) {
     let count2 = 0;
     for (let i = 1; i < theArgs.length; i++) {
         argsToRemove.push(theArgs[i]);
-        console.log(argsToRemove);
     }
 
     while (count1 < initialArray.length){
